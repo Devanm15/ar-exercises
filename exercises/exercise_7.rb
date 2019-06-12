@@ -11,3 +11,9 @@ puts "----------"
 
 # Your code goes here ...
 
+puts "Enter a store name____ "
+newName = gets.chomp
+
+store_4 = Store.create(name: newName)
+puts store_4.valid? 
+puts store_4.errors.full_messages.inspect
